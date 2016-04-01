@@ -1,0 +1,22 @@
+{
+  "name": "gerrit-report-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard app that reports on commit review data from Gerrit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Earthstar/gerrit-report-dashboard.git"
+  },
+  "keywords": [
+    "gerrit"
+  ],
+  "author": "Deena Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Earthstar/gerrit-report-dashboard/issues"
+  },
+  "homepage": "https://github.com/Earthstar/gerrit-report-dashboard#readme"
+}
