@@ -2,8 +2,9 @@
   "name": "gerrit-report-dashboard",
   "version": "1.0.0",
   "description": "Dashboard app that reports on commit review data from Gerrit",
-  "main": "index.js",
+  "main": "build/main.js",
   "scripts": {
+    "build": "./node_modules/babel-cli/bin/babel.js --presets react,es2015 src/ --watch --out-dir build/ --source-maps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
