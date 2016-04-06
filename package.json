@@ -4,10 +4,11 @@
   "description": "Dashboard app that reports on commit review data from Gerrit",
   "main": "build/main.js",
   "scripts": {
-    "build": "./node_modules/webpack/bin/webpack.js",
+    "bundle": "./node_modules/webpack/bin/webpack.js",
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline",
     "lint": "./node_modules/eslint/bin/eslint.js src/*",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run lint && npm run bundle"
   },
   "repository": {
     "type": "git",
