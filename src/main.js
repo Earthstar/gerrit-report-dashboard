@@ -1,18 +1,11 @@
-class Foo { // this is ES6 syntax!
-  constructor(msg) {
-    this.msg = msg;
-  }
-  speak() {
-    console.log(this.msg);
-  }
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log('hello world');
+// Webpack will find this file in src/helper_module.js
+import { PersonComponent } from 'helper_module';
 
+// Use React JSX syntax:
 ReactDOM.render(
-  <h1>Hello world, React!</h1>, // this is React's JSX syntax!
-  document.getElementById('example')
+  <PersonComponent myName={"Bob"} myAge={32.5} />,
+  document.getElementById('exampleDiv')
 );
-
-var f = new Foo('Hi there, console!');
-f.speak()
