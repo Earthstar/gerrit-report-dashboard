@@ -6,6 +6,6 @@ import { PersonComponent } from 'helper_module';
 
 // Use React JSX syntax:
 ReactDOM.render(
-  <PersonComponent myName={"Bob"} myAge={32.5} />,
+  <PersonComponent myName={"Boberb"} myAge={32.5} />,
   document.getElementById('exampleDiv')
 );

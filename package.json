@@ -4,8 +4,9 @@
   "description": "Dashboard app that reports on commit review data from Gerrit",
   "main": "build/main.js",
   "scripts": {
-    "build": "./node_modules/babel-cli/bin/babel.js --presets react,es2015 src/ --watch --out-dir build/ --source-maps",
-    "lint": "./node_modules/eslint/bin/eslint.js src/main.js",
+    "build": "./node_modules/webpack/bin/webpack.js",
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline",
+    "lint": "./node_modules/eslint/bin/eslint.js src/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,7 +36,8 @@
   "devDependencies": {
     "eslint": "^2.7.0",
     "eslint-config-airbnb": "^6.2.0",
-    "eslint-plugin-react": "^4.2.3"
+    "eslint-plugin-react": "^4.2.3",
+    "webpack-dev-server": "^1.14.1"
   },
   "eslintConfig": {
     "extends": "airbnb"
