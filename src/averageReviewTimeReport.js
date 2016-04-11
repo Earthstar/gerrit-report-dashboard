@@ -7,4 +7,4 @@ const AverageReviewTimeReport = (props) =>
   <span className="large-report">{props.averageHours} hours</span>
 </div>;
 
-module.exports = AverageReviewTimeReport;
+export { AverageReviewTimeReport };
